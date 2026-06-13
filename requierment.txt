@@ -1,0 +1,9 @@
+fastapi
+langchain
+dotenv
+langchain-google-genai
+langchain-pinecone
+langchain-text_splitters
+langchain-docling
+langchain-community
+langchain-ollama

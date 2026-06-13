@@ -1,0 +1,407 @@
+================================================================================
+JIRA EXPORT â€” Project: SAYYAM (SYM)
+Total issues: 8
+================================================================================
+
+--------------------------------------------------------------------------------
+[SYM-198] Existing application understanding
+--------------------------------------------------------------------------------
+Type: Task
+Status: Hold / Blocked
+Priority: Medium
+Product: MediLoan
+Sprint: -
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Parent Epic: SYM-161 â€” Mediloan LOC (Loan Origination System) - New
+Created: 2026-05-25 | Updated: 2026-06-08 | Due: 2026-06-10
+Subtasks:
+  - SYM-213: Application and code undertstanding - Documentation [Done]
+  - SYM-214: Database and data understanding - Documentation [Done]
+  - SYM-215: Existing application UI forms documentation [Done]
+  - SYM-216: Application Audit Report and Resolution check [Hold / Blocked]
+Description:
+Overview
+This task encompasses a comprehensive knowledge gathering and documentation initiative focused on understanding the current state of the Medeloan Loan Origination System (LOS). The objective is to create detailed documentation artifacts that serve as a single source of truth for the system's architecture, codebase, data structure, and user interface components. This foundational knowledge base will enable the development team to make informed decisions during system enhancements, debugging, and future feature implementations.
+Business Objective
+Establish a comprehensive understanding of the existing LOS application architecture, enabling the team to effectively plan, execute, and validate enhancements related to OCR processing, data validation, and conflict resolution features while maintaining system stability and backward compatibility.
+Task Scope
+This task is divided into three focused sub-tasks that collectively provide complete application visibility:
+ Application and Code Understanding and Documentation
+ Analyze existing codebase structure, architecture, and design patterns
+ Document technology stack, frameworks, and dependencies
+ Identify key modules, services, and their responsibilities
+ Map application flow and integration points
+ Document existing APIs and their contracts
+ Identify the code quality baseline and technical debt
+ Create architecture diagrams and component interaction maps
+ Document deployment process and environment configuration
+ Database and Data Understanding and Documentation
+ Document current database schema and table structures
+ Map data relationships and primary/foreign key relationships
+ Document data types, constraints, and validation rules
+ Identify existing indexes and query performance considerations
+ Document data flow from the application to the persistence layer
+ Map ORM mappings and entity relationships
+ Identify data migration strategies and versioning approach
+ Document sensitive data handling and encryption mechanisms
+ Create entity relationship diagrams (ERDs)
+ Existing Application UI Forms Documentation
+ Document all 4 wizard form structures and their layouts
+ Capture field definitions, validation rules, and dependencies
+ Document form flow, conditional field visibility, and navigation logic
+ Document form submission processes and error handling
+ Capture document upload mechanisms and file handling
+ Document responsive design considerations
+ Map user interactions and state management
+ Document accessibility features and usability considerations
+ Create a visual representation of current form validations
+Deliverables
+ Comprehensive application architecture documentation
+ Code structure analysis and module dependency diagrams
+ Complete database schema documentation with ERDs
+ API endpoint documentation and contract specifications
+ Technical stack and dependency inventory
+ Data flow diagrams (end-to-end)
+Key Objectives
+ Eliminate knowledge silos and distribute system understanding across the team
+ Create reference documentation for onboarding future team members
+ Identify gaps, inconsistencies, or areas requiring clarification
+ Establish a baseline for measuring improvements post-enhancement
+ Enable informed decision-making for upcoming feature implementations
+ Document existing constraints and workarounds
+ Identify reusable components and patterns for future development
+Acceptance Criteria
+ [ ] Complete code documentation covering all major modules and services
+ [ ] Database schema fully documented with relationship diagrams
+ [ ] All 4 wizard forms fully documented with field definitions and logic
+ [ ] Architecture diagram created showing component interactions
+ [ ] API contracts documented for all existing endpoints
+ [ ] Technology stack and dependencies inventory completed
+ [ ] UI mockups/screenshots created for all current forms
+ [ ] Data flow diagrams created showing end-to-end processes
+ [ ] Technical debt and limitations identified and logged
+ [ ] All documentation reviewed and approved by team leads
+ [ ] Documentation stored in a centralized, accessible location
+ [ ] Documentation meets clarity and completeness standards
+Success Metrics
+ 100% of codebase modules documented
+ 100% of database objects documented with clear descriptions
+ All 4 wizard forms are completely captured with field specifications
+ Zero ambiguity in the existing system architecture for team members
+ New team members can be onboarded effectively using the created documentation
+ Documentation completeness score â‰¥ 95%
+Assumptions
+ The existing codebase is available and accessible
+ Database credentials and access are available
+ Application is currently running in at least one environment
+ Team members have the necessary technical skills for analysis
+ No major architectural changes are planned during this analysis
+ Documentation tools and space are available
+Considerations
+ Documentation should be detailed enough for independent understanding
+ Use industry-standard formats and templates for consistency
+ Include both high-level overviews and detailed specifications
+ Capture "why" decisions were made, not just "what" was implemented
+ Flag any deprecated or legacy code for future refactoring
+ Document any workarounds or temporary solutions currently in place
+Estimated Effort & Timeline
+ Sub-task 1 (Code Analysis): 4-5 days
+ Sub-task 2 (Database Analysis): 3-4 days
+ Sub-task 3 (UI Documentation): 3-4 days
+ Total Estimated Duration: 11-15 days
+  Team Members: 3 developers + 1 technical writer
+Related Tasks/Epics
+ Epic: Medeloan Loan Origination System (LOS)
+Notes & Context
+This task serves as the foundation for all subsequent development work on the LOS system. The quality and completeness of documentation created here will directly impact the efficiency and accuracy of future feature implementations and troubleshooting efforts. Prioritize clarity and completeness over speed.
+--------------------------------------------------------------------------------
+[SYM-197] Application architecture setup and documentation
+--------------------------------------------------------------------------------
+Type: Task
+Status: In Progress
+Priority: Medium
+Product: MediLoan
+Sprint: -
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Parent Epic: SYM-161 â€” Mediloan LOC (Loan Origination System) - New
+Created: 2026-05-25 | Updated: 2026-06-08 | Due: 2026-06-10
+Subtasks:
+  - SYM-204: Initial API app architecture setup [In Progress]
+  - SYM-205: Define API and Integration Specifications [Done]
+  - SYM-206: Document Architectural Decision Records (ADRs) [Done]
+  - SYM-207: Develop System Context Diagram [Done]
+  - SYM-208: Design Logical Architecture Diagram [Done]
+  - SYM-209: Create Architecture Vision Document [Done]
+  - SYM-210: Specify User Interface (UI) and User Experience (UX) Guidelines [Done]
+  - SYM-211: Document Non-Functional Requirements (NFRs) [Done]
+  - SYM-212: Develop Test Plan and Quality Assurance (QA) Documentation [Done]
+Description:
+Overview
+This task focuses on creating a comprehensive set of architecture and design documents for the Medeloan Loan Origination System (LOS) project. The objective is to establish a clear and shared understanding of the system's architecture, design decisions, technical specifications, and user experience guidelines among all stakeholders. These documents will serve as a foundation for the development, testing, and maintenance activities throughout the project lifecycle.
+Business Objective
+Develop a well-documented and communicated architecture and design for the Medeloan LOS application, enabling efficient development, effective communication among stakeholders, and alignment with business goals and requirements.
+Task Scope
+The following architecture and design documents will be created as part of this task:
+ Architecture Vision Document
+ System Context Diagram
+ Architectural Decision Records (ADRs)
+ Logical Architecture Diagram
+ API and Integration Specifications
+ Non-Functional Requirements (NFRs) Documentation
+ User Interface (UI) and User Experience (UX) Specifications
+ Test Plan and Quality Assurance (QA) Documentation
+Each document will be created as a sub-task under this parent task, with its own specific requirements, deliverables, and acceptance criteria.
+Deliverables
+ Complete set of architecture and design documents as listed in the task scope
+ Document templates and guidelines for future updates and maintenance
+ Stakeholder review and sign-off on each document
+ Central repository for storing and accessing the documents
+Key Objectives
+ Provide a clear and comprehensive understanding of the LOS application's architecture and design
+ Facilitate effective communication and collaboration among technical and non-technical stakeholders
+ Serve as a reference for development, testing, and maintenance activities
+ Ensure alignment with business goals, requirements, and quality standards
+ Enable efficient onboarding and knowledge transfer for new team members
+ Support future enhancements, scalability, and maintainability of the LOS application
+Acceptance Criteria
+ [ ] All documents listed in the task scope are created and reviewed
+ [ ] Documents adhere to the agreed-upon standards, templates, and guidelines
+ [ ] Documents are reviewed and approved by relevant stakeholders
+ [ ] Documents are stored in a central repository accessible to all stakeholders
+ [ ] Documents are version-controlled and have a clear update and maintenance process
+ [ ] Documents effectively communicate the architecture and design to both technical and non-technical audiences
+ [ ] Documents are aligned with the project's business goals and requirements
+Success Metrics
+ 100% of the planned architecture and design documents are created and approved
+ Stakeholder satisfaction rating of 4.5 or higher (on a scale of 1-5) for document clarity and effectiveness
+ Reduction in development and testing efforts by 20% due to clear architecture and design documentation
+ Onboarding time for new team members reduced by 30% using the documentation
+ Number of architecture and design-related issues or rework reduced by 40%
+Dependencies
+ Access to the existing system documentation and codebase
+ Availability of subject matter experts and key stakeholders for input and review
+ Agreement on document standards, templates, and tools
+ Allocation of sufficient time and resources for document creation and review
+Assumptions
+ The project team has the necessary skills and expertise to create the architecture and design documents
+ Stakeholders will actively participate in the review and approval process
+ The existing system documentation and codebase are accessible and up-to-date
+ The project timeline and budget allow for the creation of comprehensive documentation
+Estimated Effort
+The estimated effort for each sub-task will be determined separately based on the specific document requirements and complexity. The overall estimated effort for this parent task will be the sum of the efforts of all sub-tasks.
+Related Tasks/Epics
+ Epic: Medeloan Loan Origination System (LOS) Enhancement
+ Task: Existing System Documentation and Knowledge Transfer
+ Task: Development of New LOS Features
+ Task: System Integration and Testing
+Notes
+ Prioritize the creation of documents based on their impact on the development and testing activities
+ Ensure regular communication and collaboration with stakeholders throughout the documentation process
+ Establish a clear process for document updates and maintenance post-project completion
+ Consider using collaborative tools and platforms for document creation and review
+--------------------------------------------------------------------------------
+[SYM-161] Mediloan LOC (Loan Origination System) - New
+--------------------------------------------------------------------------------
+Type: Epic
+Status: In Progress
+Priority: Medium
+Product: MediLoan
+Sprint: -
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-05-25 | Updated: 2026-06-11 | Due: 2026-06-17
+Subtasks:
+  none
+Description:
+Overview
+Medeloan Loan Origination System (LOS) is a comprehensive web-based platform designed to streamline the medical loan application process. The system enables partner organizations (Claim Buddy, MedsCred, and other authorized healthcare entities) to submit medical loan applications on behalf of patients through a structured, user-friendly interface with automated document processing capabilities.
+Business Objective
+Reduce manual data entry errors, accelerate loan application processing time, and ensure data accuracy and consistency through intelligent document processing and validation mechanisms while maintaining full regulatory compliance and comprehensive audit trails.
+Key Features & Capabilities
+ Multi-Partner Support
+ Support multiple partner organizations with different field requirements and configurations
+ Partner-specific workflows and optional/mandatory field handling
+ Partner user access management and role-based permissions
+ Wizard-Based Application Form
+ 4-step sequential wizard interface guiding users through structured data collection
+ Context-aware field validation and progressive form completion
+ Support for applicant, co-applicant, and hospital information capture
+ Automated Document Processing with OCR
+ Optical Character Recognition (OCR) for identity document extraction (Aadhar, PAN)
+ Automatic population of form fields from extracted document data
+ Support for multiple document formats (JPG, PNG, PDF)
+ Document quality validation and legibility verification
+ Intelligent Data Validation & Conflict Resolution
+ PAN validation through external verification services
+ Multi-source data comparison (OCR extraction vs. external API validation)
+ Intelligent conflict detection and user-driven resolution workflow
+ Comprehensive conflict recording for audit and compliance purposes
+ Comprehensive Data Collection
+ Applicant information (personal, KYC, address, insurance, banking)
+ Co-applicant support with relationship tracking (optional)
+ Hospital and medical treatment details
+ Insurance policy validation and verification
+ Employment proof and additional supporting documents
+ Seamless LMS Integration
+ Complete application data transmission to Loan Management System
+ Conflict information and resolution history inclusion
+ Full audit trail accessibility for downstream processing
+ Real-time status tracking and application monitoring
+ Enterprise-Grade Audit & Compliance
+ Complete audit trail of all actions, modifications, and decisions
+ Conflict resolution documentation with timestamps and user attribution
+ Sensitive data encryption and access control
+ Regulatory compliance and data retention management
+System Scope
+In Scope:
+ Partner user authentication and authorization
+ Multi-wizard application form with 4 sequential steps
+ Document upload and OCR processing
+ PAN validation and conflict resolution
+ Data validation against external services
+ Application submission workflow
+ LMS integration and data transmission
+ Audit trail and compliance logging
+ Support for Claim Buddy and MedsCred partners
+Out of Scope:
+ Loan approval decision-making (handled by LMS)
+ Loan disbursement processing (handled by LMS)
+ Insurance policy underwriting
+ Medical treatment authorization
+Target Users
+ Partner Loan Officers (Claim Buddy, MedsCred, and other partner organizations)
+ Partner Organization Administrators
+ System Administrators
+ Patients/Applicants (passive participants - information collected on their behalf)
+Key Business Value Propositions
+ Speed: Reduce application processing time from days to hours through automation
+ Accuracy: Minimize manual data entry errors through OCR and automated validation
+ Compliance: Maintain complete audit trail for regulatory requirements and dispute resolution
+ User Experience: Intuitive wizard-based interface reduces training requirements
+ Scalability: Support multiple partners with configurable requirements
+ Transparency: Real-time status tracking and conflict visibility throughout the workflow
+Success Criteria
+ Zero manual data re-entry for automatically extracted fields
+ 95%+ accuracy rate for OCR data extraction
+ 100% conflict detection and resolution for multi-source data
+ Complete audit trail for all transactions
+ Successful integration with LMS without data loss
+ Support for all required partner-specific field variations
+ Sub-60 minute average application completion time
+Technical Considerations
+ RESTful API integration with external PAN validation service
+ OCR engine integration for document processing
+ Encrypted storage for sensitive PAN and Aadhar data
+ Database design supporting audit trail and conflict tracking
+ Error handling and graceful fallback for service failures
+ Performance optimization for document processing
+Dependencies & Assumptions
+ External PAN validation service availability and reliability
+ Partner organization setup and user provisioning in LMS
+--------------------------------------------------------------------------------
+[SYM-71] Extension Report
+--------------------------------------------------------------------------------
+Type: Story
+Status: Closed
+Priority: Medium
+Product: New Finance Dashboard
+Sprint: Finance Sprint 9
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-05-14 | Updated: 2026-06-08 | Due: -
+Subtasks:
+  - SYM-72: Primary database structure and documentation - Extension Report [Closed]
+  - SYM-73: ETL startegy - Extension Report [Closed]
+  - SYM-74: Export Strategy - Extension Report [Closed]
+  - SYM-75: React application screens and filters - Extension Report [Closed]
+  - SYM-76: Extension Report API development and integration [Closed]
+Description:
+(none provided)
+--------------------------------------------------------------------------------
+[SYM-59] Customer refund record report
+--------------------------------------------------------------------------------
+Type: Story
+Status: Local Code Review
+Priority: Medium
+Product: Finance Dashboard
+Sprint: Finance Sprint 9
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-05-12 | Updated: 2026-06-03 | Due: -
+Subtasks:
+  - SYM-60: Primary report database structure and documenting [Closed]
+  - SYM-61: ETL Stratagy-Customer Refund Report [Closed]
+  - SYM-62: Export Strategy-Customer Refund Report [Closed]
+  - SYM-63: React Screens and Filters-Customer Refund Report [Closed]
+  - SYM-64: Customer Refund Report API development and integration [Closed]
+Description:
+(none provided)
+--------------------------------------------------------------------------------
+[SYM-52] PAR Report
+--------------------------------------------------------------------------------
+Type: Story
+Status: Closed
+Priority: Medium
+Product: New Finance Dashboard
+Sprint: Finance Sprint 9
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-05-11 | Updated: 2026-06-08 | Due: -
+Subtasks:
+  - SYM-57: PAR APIs [Closed]
+  - SYM-58: PAR API integration [Closed]
+  - SYM-53: Primary report database understanding and documentation - PAR [Closed]
+  - SYM-55: Export Stratagy - PAR [Closed]
+  - SYM-54: ETL Stratagy - PAR [Closed]
+  - SYM-56: React screens and filters - PAR [Closed]
+Description:
+(none provided)
+--------------------------------------------------------------------------------
+[SYM-26] Rewards Payout Report
+--------------------------------------------------------------------------------
+Type: Story
+Status: Closed
+Priority: Medium
+Product: New Finance Dashboard
+Sprint: Finance Sprint 9
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-05-07 | Updated: 2026-06-08 | Due: -
+Subtasks:
+  - SYM-39: Primary report structure and Document [Closed]
+  - SYM-40: ETL Stratagy - Reward payout [Closed]
+  - SYM-41: Export strategy - Reward payout [Closed]
+  - SYM-42: Reward payout - React screens [Closed]
+  - SYM-43: Reward payout - APIs [Local Code Review]
+  - SYM-44: Reward payout - API integration [Local Code Review]
+Description:
+The following are the pointers
+ Primary report database structure and document
+ ETL Plan for the report
+ Export functionality for the report
+ React app screen and filters
+ Report dashboard APIs
+ API integrations
+--------------------------------------------------------------------------------
+[SYM-14] Loan Report
+--------------------------------------------------------------------------------
+Type: Story
+Status: Closed
+Priority: Medium
+Product: New Finance Dashboard
+Sprint: Finance Sprint 9
+Assignee: Rohan Jadhav (rohan.j@work.sayyaminvestments.in)
+Created: 2026-04-27 | Updated: 2026-06-08 | Due: -
+Subtasks:
+  - SYM-16: ETL Pipeline planning ans implementation [Closed]
+  - SYM-17: Export Stratagy and Implementation [Closed]
+  - SYM-18: React App Screens and Development - Loan Report [Closed]
+  - SYM-19: Loan Report APIs [Closed]
+  - SYM-15: Primary Database understanding and documenting [Closed]
+  - SYM-20: Consolidated document [ToDo]
+Description:
+Loan report functionalities are as followsâ€‹
+ Understanding the report and Database structureâ€‹
+ Documenting current database and table structuresâ€‹
+ ETL Transformer logic planningâ€‹
+ ETL Pipelineâ€‹
+ Export Strategy planningâ€‹
+ Export Functionalityâ€‹
+ Report Implementation Reactâ€‹
+ Report Implementation Supersetâ€‹
+ Consolidate Document for Loan Report
