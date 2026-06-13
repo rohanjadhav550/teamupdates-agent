@@ -30,5 +30,4 @@ def embedding():
 
     print('Initiating embbade....')
     PineconeVectorStore.from_documents(formated_texts, embadder, index_name=os.environ["INDEX_NAME"])
-
-embedding()
+    print('Vectore process completed!')
