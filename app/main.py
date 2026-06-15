@@ -1,5 +1,5 @@
 from embadder import embedding
-from rag import ask_jira
+from app.agents.rag import ask_jira
 
 def embed_data(file_path: str):
     embedding(file_path)
@@ -10,5 +10,5 @@ def main():
     result = ask_jira("Give me all ticket IDs")
     print(result)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
