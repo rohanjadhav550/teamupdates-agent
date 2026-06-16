@@ -65,5 +65,3 @@ def ask_jira(question: str):
     result = chain.invoke({"question":question})
 
     return result
-
-print(ask_jira("Give me all ticket IDs"))
