@@ -9,16 +9,26 @@ from langchain_ollama import OllamaEmbeddings
 
 load_dotenv()
 
-embadder = OllamaEmbeddings(
-    model="qwen3-embedding"
-)
+# embadder = OllamaEmbeddings(
+#     model="qwen3-embedding"
+# )
+embadder = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 text_splitter = CharacterTextSplitter(
     chunk_size=1000,
-    chunk_overlap=0
+    chunk_overlap=200
 )
 
 def initiate_loader(file_path: str):
     return DoclingLoader(file_path=[file_path])
+
+def delete_all():
+    print("Initiating complete delete...")
+    pinecone_vector = PineconeVectorStore(
+        index_name=os.environ["INDEX_NAME"],
+        embedding=embadder,
+    )
+    pinecone_vector.delete(delete_all=True)
+    print("deletion process completed!")
 
 def embedding(file_path: str):
     print("Initiating Process....")
@@ -35,3 +45,6 @@ def embedding(file_path: str):
     print('Initiating embbade....')
     PineconeVectorStore.from_documents(formated_texts, embadder, index_name=os.environ["INDEX_NAME"])
     print('Vectore process completed!')
+
+embedding("/media/rohan/D-Drive/Agentic development/teamupdates-agent/data/Jira_Tickets_Export.txt")
+# delete_all()
