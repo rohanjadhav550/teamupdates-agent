@@ -13,16 +13,16 @@ load_dotenv()
 
 print("Initiating Jira agent....")
 
-# embedder = OllamaEmbeddings(model="qwen3-embedding")
-# llm = OllamaLLM(
-#     model="gemma4",
-#     temperature=0
-# )
-embedder = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
-llm = ChatGoogleGenerativeAI(
-    model="gemma-4-26b-a4b-it",
-    temperature=0,
-)  
+embedder = OllamaEmbeddings(model="qwen3-embedding")
+llm = OllamaLLM(
+    model="gemma4",
+    temperature=0
+)
+# embedder = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
+# llm = ChatGoogleGenerativeAI(
+#     model="gemma-4-26b-a4b-it",
+#     temperature=0,
+# )  
 vectores = PineconeVectorStore(
     index_name=os.environ["INDEX_NAME"],
     embedding=embedder
