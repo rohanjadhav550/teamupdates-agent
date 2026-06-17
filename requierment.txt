@@ -7,3 +7,5 @@ langchain-text_splitters
 langchain-docling
 langchain-community
 langchain-ollama
+pymysql
+sqlalchemy
